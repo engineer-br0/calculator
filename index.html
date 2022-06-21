@@ -10,92 +10,96 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <h1>CALCULATOR</h1>
-
-    <div class="card" style="width: 18rem;">
+    <br><br>
+    <div class="container-fluid  ">
        
-        <div class="card-body">
+    <h1 class="row justify-content-center " >CALCULATOR</h1><br>
+    <div class="row justify-content-center" >
+    <div class="card " style="padding: 0%; border-radius: 0%;"  >
+       
+        <div class="card-body " style="padding: 10px 0 0 0;">
           
-          <div class="container">
-            <div class="row">
-            <div class="col-12" style="height:22px; border:1px solid red" id="cin">
+          <div class="container  " id="numpad"  style=" background-image: linear-gradient(45deg,  rgb(23, 22, 37),  rgb(115, 110, 138));">
+            <div class="row justify-content-center" style="height: 500px;">
+            <div class="col-12" style="background-color: rgb(255, 255, 255); height:70px; margin: px 0 0px 0;  text-align:end; padding-top: 35px; font-size: 26px;" id="cin">
         </div>
+            
+          
             <div class="row">
-                <div onclick="funcC()" class="col-3" style="background-color: red ;">
-                    C
-                </div>
-                <div onclick="funcX" class="col-3">
-                    X
-                </div>
-                <div onclick="div()" class="col-3">
-                    /
-                </div>   
-                <div class="col-3 bg-warning bg-gradient">
-                    ÷
-                </div>                            
-            </div>
-
-            <div class="row">
-                <div onclick="saat()" class="col-3">
+                <div  onclick="num(7)" class="col-3 ">
                     7
                 </div>
-                <div class="col-3">
+                <div onclick="num(8)" class="col-3 ">
                     8
                 </div>
-                <div class="col-3">
+                <div onclick="num(9)" class="col-3">
                     9
                 </div>   
-                <div class="col-3 bg-warning bg-gradient">
-                    ×    
-                </div>                            
+                <div onclick="op('%')" class="col-3 ">
+                    %
+                </div>                              
             </div>
 
             <div class="row">
-                <div class="col-3" >
+                <div onclick="num(4)" class="col-3" >
                     4
                 </div>
-                <div class="col-3">
+                <div onclick="num(5)" class="col-3">
                     5
                 </div>
-                <div class="col-3">
+                <div onclick="num(6)" class="col-3">
                     6
                 </div>   
-                <div class="col-3 bg-warning bg-gradient">
-                    -
-                </div>                            
+                <div onclick="op('*')" class="col-3 ">
+                    ×    
+                </div>                             
             </div>
             
             <div class="row">
-                <div class="col-3">
+                <div onclick="num(1)" class="col-3">
                     1
                 </div>
-                <div class="col-3">
+                <div onclick="num(2)" class="col-3">
                     2
                 </div>
-                <div class="col-3">
+                <div onclick="num(3)" class="col-3">
                     3
                 </div>   
-                <div onclick="plus()" class="col-3 bg-warning bg-gradient">
-                    +
-                </div>                            
+                <div onclick="op('-')" class="col-3">
+                    -
+                </div>                           
             </div>
 
             <div class="row">
-                <div class="col-3">
+                <div onclick="num(0)" class="col-3">
                     0
                 </div>
-                <div class="col-3">
+                <div onclick="op('.')" class="col-3">
                     .
                 </div> 
-                <div onclick="eq()" class="col-6 bg-warning bg-gradient">
-                    =
-                </div>                            
+                <div onclick="funcC()" class="col-3 " style=" font-size: large; ">
+                    C
+                </div>
+                <div onclick="op('+')" class="col-3 ">
+                    +
+                </div> 
+                                         
             </div>
+        
 
+            <div class="row">
+                <div onclick="eq()" class="col-12 " style=" color: white; font-size: larger; background-image: linear-gradient(25deg, rgb(249, 147, 84), rgb(181, 71, 3) ); text-align: center; padding-top: 28px;">
+                    =
+                </div>   
+            </div>
+        </div>
 
           </div>
         </div>
       </div>
+    </div>
+    </div>
 
+    <div id="footer"> by Mridul Sharma 🇮🇳</div>
 </body>
 </html>
